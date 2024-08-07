@@ -1,0 +1,17 @@
+.container {
+    block-size: 2.75rem;
+    padding-block-start: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.innerWrapper {
+    display: flex;
+    justify-content: space-between;
+    inline-size: 14.25rem;
+    align-items: center;
+
+}

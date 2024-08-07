@@ -1,0 +1,20 @@
+.wrapper {
+    background-color: #fff;
+    inline-size: 8.75rem;
+    block-size: 8.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--radius-20);
+}
+
+.messenger {
+    text-align: center;
+    justify-content: center;
+}
+
+.messenger > img {
+    margin: 0;
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+}

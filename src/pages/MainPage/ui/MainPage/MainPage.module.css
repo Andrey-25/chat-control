@@ -1,0 +1,4 @@
+.container {
+    inline-size: var(--max-app-width);
+    margin: 0 auto;
+}

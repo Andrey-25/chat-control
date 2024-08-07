@@ -1,0 +1,30 @@
+.wrapper {
+    inline-size: 35.5rem;
+    block-size: 34rem;
+    border-radius: var(--radius-20);
+    padding: 2rem;
+    background-color: var(--clr-bg-dark-blue);
+    background-image: url(../../../../shared/assets/icon/big-bg-tg.png), url(../../../../shared//assets/icon/liltle-bg-tg.png);
+    background-repeat: no-repeat;
+    background-position: 21.5rem 8rem, 15rem 26rem;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    font-family: Roboto;
+    font-size: 0.82rem;
+    font-weight: var(--fw-medium);
+    text-align: left;
+    text-transform: uppercase;
+    margin-block-end: 1rem;
+}
+
+.subtitle {
+    margin-block-end: 15.25rem;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 3.5rem;
+    font-weight: var(--fw-medium);
+    /* letter-spacing: -1.5px; */
+    text-align: left;
+}

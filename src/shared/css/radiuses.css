@@ -1,0 +1,10 @@
+:root {
+    --radius-8: 0.5rem;
+    --radius-10: 0.625rem;
+    --radius-12: 0.75rem;
+    --radius-16: 1rem;
+    --radius-20: 1.25rem;
+    --radius-24: 1.5rem;
+    --radius-35: 2.1875rem;
+    --radius-60: 3.75rem;
+}

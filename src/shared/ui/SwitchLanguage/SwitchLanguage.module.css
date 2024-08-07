@@ -1,0 +1,14 @@
+.container {
+    align-items: center;
+    display: flex;
+    font-size: var(--fs-caption-1);
+    font-weight: var(--fw-regular);
+    gap: .5rem;
+}
+
+.btn {
+    block-size: var(--fs-title-3);
+    color: var( --clr-title-black);
+    cursor: pointer;
+    opacity: .5;
+}

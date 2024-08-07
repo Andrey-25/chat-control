@@ -1,0 +1,5 @@
+.container {
+    margin-block-start: 1rem;
+    block-size: 12.625rem;
+    display: flex;
+}

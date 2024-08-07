@@ -1,0 +1,23 @@
+:root {
+    /* Font sizes */
+    --fs-headline-1: 80px;
+    --fs-headline-2: 64px;
+    --fs-headline-3: 48px;
+    --fs-headline-4: 36px;
+
+    --fs-title-1: 32px;
+    --fs-title-2: 24px;
+    --fs-title-3: 20px;
+    --fs-title-4: 16px;
+
+    --fs-body-1: 18px;
+    --fs-body-2: 16px;
+    --fs-body-3: 14px;
+
+    --fs-caption-1: 12px;
+
+    /* Font weights */
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+}

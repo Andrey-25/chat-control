@@ -1,0 +1,32 @@
+.container {
+    margin-block-start: 2rem;
+    block-size: 38rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutChatControl {
+    inline-size: 39.5rem;
+    block-size: 38rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutWrapper {
+    display: flex;
+    justify-content: space-between;
+    inline-size: 39.5rem;
+    block-size: 18.5rem;
+    margin-block-end: 1rem;
+}
+
+.resuourcesWrapper {
+    display: flex;
+    justify-content: space-between;
+    inline-size: 39.5rem;
+    block-size: 18.5rem;
+    margin-block-end: 1rem;
+}

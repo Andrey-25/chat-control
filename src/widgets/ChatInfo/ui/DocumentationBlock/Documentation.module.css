@@ -1,0 +1,68 @@
+.wrapper {
+    position: relative;
+    overflow: hidden; 
+    background-color: var(--clr-bg-purple);
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    inline-size: 26.75rem;
+    block-size: 16.5rem;
+    margin-inline-start: 1rem;
+    border-radius: var(--radius-20);
+}
+.title {
+    color: var(--clr-white);
+    font-family: Commissioner;
+    font-size: var(--fs-title-1);
+    font-weight: var(--fw-semibold);
+    margin-block-start: 7em;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    text-align: left;
+}
+
+.arrow {
+    position: absolute;
+    top: 1rem;
+    right: 1.125rem;
+    inline-size: 1.25rem;
+    block-size: 1.25rem
+}
+
+.rectangle1 {
+    z-index: 3;
+    left: 1.69rem;
+    top: -3.7rem;
+    position: absolute;
+    inline-size: 7.75rem;
+    block-size: 11rem; 
+    border-radius: 4px;
+    backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.2); 
+    transform: rotate(140.00deg);
+}
+
+.rectangle2 {
+    z-index: 2;
+    left: 1.56rem;
+    top: -1.7rem;
+    position: absolute;
+    inline-size: 7.75rem;
+    block-size: 11rem; 
+    border-radius: 4px;
+    backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.2); 
+    transform: rotate(160.00deg);
+}
+
+.rectangle3 {
+    z-index: 1;
+    left: -34.29px;
+    top: 0rem;
+    position: absolute;
+    inline-size: 7.75rem;
+    block-size: 11rem; 
+    border-radius: 4px;
+    backdrop-filter: blur(40px);
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(180.00deg); 
+}
