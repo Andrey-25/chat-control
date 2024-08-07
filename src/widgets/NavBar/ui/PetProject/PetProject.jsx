@@ -11,9 +11,11 @@ export function PetProject() {
             и следи за вакансиями
             </div>
 
-            <h2 className={styles.header}>
-                Пет проект
-            </h2>
+            <a href="https://chats-organization.gitbook.io/chat-control/general-information/about-the-project" className={styles.messenger}>
+                <h2 className={styles.header}>
+                    Пет проект
+                </h2>
+            </a>
         </div>
     )
 }

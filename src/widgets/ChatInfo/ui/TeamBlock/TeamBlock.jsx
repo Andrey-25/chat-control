@@ -8,7 +8,7 @@ export function TeamBlock() {
         <div className={styles.wrapper}>
             <a href="https://chats-organization.gitbook.io/chat-control/our-team" target="_blank">
                 {/* <img className={styles.arrow} src={Arrow} alt="black arrow" /> */}
-                <Arrow mainColor={'#000'} />
+                <Arrow mainColor='#000' />
             </a>
 
             <div className={styles.participants}>
