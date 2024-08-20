@@ -13,24 +13,19 @@ export function ChatInfo() {
                 <MainBlock />
 
                 <div className={styles.aboutChatControl}>
-                    <dvv className={styles.aboutWrapper}>
+                    <div className={styles.aboutWrapper}>
                         <PossibilitiesBlock />
 
                         <TeamBlock />
-                    </dvv>
+                    </div>
 
-
-                    <div className={styles.resuourcesWrapper}>
+                    <div className={styles.resourcesWrapper}>
                         <MessengerBlocks />
 
                         <DocumentationBlock />
                     </div>
                 </div>
-
-                <footer>
-                    
-                </footer>
             </div>
         </div>
-    )
+    );
 }

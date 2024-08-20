@@ -18,3 +18,16 @@
     inline-size: 3.5rem;
     block-size: 3.5rem;
 }
+
+@media (max-width: 430px) {
+    .wrapper {
+        inline-size: 95px;
+        block-size: 95px;
+    }
+
+    .messenger > img {
+        margin: 0;
+        inline-size: 38px;
+        block-size: 38px;
+    }
+}

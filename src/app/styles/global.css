@@ -59,9 +59,9 @@ html {
     font-weight: var(--fw-regular);
 
     background-color: var(--clr-bg);
-    color: var(--clr-primary-text);
+    color: var(--clr-white);
 
-    scrollbar-color: var(--clr-gray) var(--clr-white);
+    scrollbar-color: var(--clr-title-gray);
     scrollbar-width: thin;
 }
 

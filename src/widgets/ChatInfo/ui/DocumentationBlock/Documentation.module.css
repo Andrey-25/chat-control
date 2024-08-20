@@ -1,31 +1,31 @@
 .wrapper {
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     background-color: var(--clr-bg-purple);
     padding-block: 1rem;
     padding-inline: 1.5rem;
     inline-size: 26.75rem;
     block-size: 16.5rem;
-    margin-inline-start: 1rem;
+    margin-inline-start: 10px;
     border-radius: var(--radius-20);
 }
+
 .title {
     color: var(--clr-white);
     font-family: Commissioner;
     font-size: var(--fs-title-1);
     font-weight: var(--fw-semibold);
     margin-block-start: 7em;
-    line-height: 40px;
     letter-spacing: -1.5px;
     text-align: left;
 }
 
-.arrow {
+.wrapper img {
     position: absolute;
     top: 1rem;
     right: 1.125rem;
     inline-size: 1.25rem;
-    block-size: 1.25rem
+    block-size: 1.25rem;
 }
 
 .rectangle1 {
@@ -34,11 +34,11 @@
     top: -3.7rem;
     position: absolute;
     inline-size: 7.75rem;
-    block-size: 11rem; 
+    block-size: 11rem;
     border-radius: 4px;
     backdrop-filter: blur(40px);
-    background: rgba(255, 255, 255, 0.2); 
-    transform: rotate(140.00deg);
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(140deg);
 }
 
 .rectangle2 {
@@ -47,11 +47,11 @@
     top: -1.7rem;
     position: absolute;
     inline-size: 7.75rem;
-    block-size: 11rem; 
+    block-size: 11rem;
     border-radius: 4px;
     backdrop-filter: blur(40px);
-    background: rgba(255, 255, 255, 0.2); 
-    transform: rotate(160.00deg);
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(160deg);
 }
 
 .rectangle3 {
@@ -60,9 +60,54 @@
     top: 0rem;
     position: absolute;
     inline-size: 7.75rem;
-    block-size: 11rem; 
+    block-size: 11rem;
     border-radius: 4px;
     backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
-    transform: rotate(180.00deg); 
+    transform: rotate(180deg);
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        position: relative;
+        overflow: hidden;
+        background-color: var(--clr-bg-purple);
+        padding-block: 11px;
+        padding-inline: 11px;
+        inline-size: 17.1875rem;
+        block-size: 11.25rem;
+        margin-inline-start: 1rem;
+        border-radius: var(--radius-20);
+    }
+
+    .title {
+        font-size: 22px;
+        margin-block-start: 5.7em;
+    }
+
+    .rectangle1 {
+        inline-size: 5.25rem;
+        block-size: 7.375rem;
+        top: -2.7rem;
+    }
+
+    .rectangle2 {
+        inline-size: 5.25rem;
+        block-size: 7.375rem;
+        top: -1.7rem;
+    }
+
+    .rectangle3 {
+        inline-size: 5.25rem;
+        block-size: 7.375rem;
+        top: 0rem;
+    }
+
+    .mobile {
+        display: block;
+    }
 }

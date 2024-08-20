@@ -1,7 +1,16 @@
 .wrapper {
-    padding-inline-start: .5rem;
+    padding-inline-start: 0.5rem;
 }
 
 .gap {
     margin-block-start: 1rem;
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        padding-inline-start: 0;
+    }
+    .gap {
+        margin-block-start: 10px;
+    }
 }

@@ -1,11 +1,11 @@
 .wrapper {
-    margin-inline-start: .5rem;
+    margin-inline-start: 0.5rem;
     position: relative;
-    overflow: hidden; 
+    overflow: hidden;
     inline-size: 23rem;
     block-size: 16.5rem;
-    background-color: var(--clr-bg-light-blue);
-    margin-inline-end: .5rem;
+    background-color: var(--clr-light-blue);
+    margin-inline-end: 0.5rem;
     border-radius: var(--radius-20);
     padding: 1rem;
     padding-inline-start: 1.5rem;
@@ -34,12 +34,13 @@
     text-align: left;
 }
 
-.arrow {
+.wrapper > a {
+    margin-inline-start: 0;
     position: absolute;
     right: 1.125rem;
     top: 1rem;
     inline-size: 1.25rem;
-    block-size: 1.25rem
+    block-size: 1.25rem;
 }
 
 .bigCircle {
@@ -63,4 +64,91 @@
     backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        margin-inline-start: 0;
+        position: relative;
+        overflow: hidden;
+        inline-size: 13.375rem;
+        block-size: 11.25rem;
+        background-color: var(--clr-light-blue);
+        margin-inline-end: 0rem;
+        border-radius: var(--radius-20);
+        padding: 1rem;
+        padding-inline-start: 1.5rem;
+    }
+
+    .desr {
+        z-index: 2;
+        position: relative;
+        inline-size: 17rem;
+        font-size: var(--fs-body-3);
+        color: rgb(255, 255, 255);
+        font-family: Roboto;
+        font-weight: var(--fw-regular);
+        text-align: left;
+        line-height: 15px;
+    }
+
+    .title {
+        z-index: 2;
+        position: relative;
+        color: rgb(255, 255, 255);
+        font-family: Commissioner;
+        margin-block-start: 10.5rem;
+        font-size: var(--fs-title-1);
+        font-weight: var(--fw-semibold);
+        text-align: left;
+    }
+
+    .wrapper > a {
+        margin-inline-start: 0;
+        position: absolute;
+        right: 1.125rem;
+        top: 1rem;
+        inline-size: 1.25rem;
+        block-size: 1.25rem;
+    }
+
+    .bigCircle {
+        z-index: 1;
+        position: absolute;
+        top: 3.7rem;
+        left: -5rem;
+        inline-size: 10rem;
+        block-size: 10rem;
+        backdrop-filter: blur(40px);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+    }
+
+    .smallCircle {
+        z-index: 2;
+        position: absolute;
+        top: 7rem;
+        left: 2.5rem;
+        inline-size: 5rem;
+        block-size: 5rem;
+        backdrop-filter: blur(40px);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
 }

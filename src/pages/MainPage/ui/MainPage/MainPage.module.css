@@ -2,3 +2,10 @@
     inline-size: var(--max-app-width);
     margin: 0 auto;
 }
+
+@media (max-width: 430px) {
+    .container {
+        inline-size: 398px;
+        margin: 0 auto;
+    }
+}

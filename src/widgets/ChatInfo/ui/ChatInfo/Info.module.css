@@ -1,6 +1,5 @@
 .container {
     margin-block-start: 2rem;
-    block-size: 38rem;
 }
 
 .wrapper {
@@ -10,7 +9,6 @@
 
 .aboutChatControl {
     inline-size: 39.5rem;
-    block-size: 38rem;
     display: flex;
     flex-direction: column;
 }
@@ -19,14 +17,28 @@
     display: flex;
     justify-content: space-between;
     inline-size: 39.5rem;
-    block-size: 18.5rem;
     margin-block-end: 1rem;
 }
 
-.resuourcesWrapper {
+.resourcesWrapper {
     display: flex;
     justify-content: space-between;
     inline-size: 39.5rem;
-    block-size: 18.5rem;
-    margin-block-end: 1rem;
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .aboutWrapper {
+        margin-block-end: 0;
+        block-size: 13.375rem;
+        justify-content: start;
+    }
+
+    .resourcesWrapper {
+        margin-block-end: 10px;
+        justify-content: start;
+    }
 }

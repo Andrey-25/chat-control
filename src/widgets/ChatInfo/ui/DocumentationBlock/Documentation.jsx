@@ -7,12 +7,16 @@ export function DocumentationBlock() {
             <div className={styles.rectangle1}></div>
             <div className={styles.rectangle2}></div>
             <div className={styles.rectangle3}></div>
-            <a href="https://chats-organization.gitbook.io/chat-control/general-information/about-the-chat-control-bot" target="_blank">
-                <img className={styles.arrow} src={Arrow} alt="black arrow" />
+            <a
+                href="https://chats-organization.gitbook.io/chat-control/general-information/about-the-chat-control-bot"
+                target="_blank"
+                rel="noreferrer"
+            >
+                <img src={Arrow} alt="white arrow" target="_blank" />
             </a>
             <div className={styles.title}>
-                Посмотреть документацию
+                Посмотреть <br className={styles.mobile} /> документацию
             </div>
         </div>
-    )
-};
+    );
+}

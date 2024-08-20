@@ -6,7 +6,7 @@
     padding-block-end: 1rem;
     inline-size: 10.5rem;
     block-size: 14.5rem;
-    margin-inline-start: .5rem;
+    margin-inline-start: 0.5rem;
     border-radius: var(--radius-20);
 }
 
@@ -19,21 +19,23 @@
     text-align: left;
 }
 
-.arrow {
+.wrapper > svg {
+    top: 1rem;
+    right: 1rem;
     position: absolute;
     inline-size: 1.25rem;
-    block-size: 1.25rem
+    block-size: 1.25rem;
 }
 
 .participants {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin: 0 -10px;
 }
 .galleryItem {
     margin: 0.5rem;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     width: 2.75rem;
     height: 2.75rem;
 }
@@ -45,18 +47,18 @@
 
 .circle {
     margin: 0.5rem;
-    inline-size: 2.75rem; 
-    block-size: 2.75rem; 
-    background-color: #d9d9d9;;
-    border-radius: 50%; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    position: relative; 
+    inline-size: 2.75rem;
+    block-size: 2.75rem;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .dot {
-    width: 5px; 
+    width: 5px;
     height: 5px;
     background-color: #000000;
     border-radius: 50%;
@@ -79,4 +81,91 @@
     top: 50%;
     left: 75%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        position: relative;
+        background-color: var(--clr-white);
+        padding-inline: 1rem;
+        padding-block-start: 2rem;
+        padding-block-end: 0.625rem;
+        inline-size: 7.25rem;
+        block-size: 10.625rem;
+        margin-inline-start: 0.5rem;
+        border-radius: var(--radius-20);
+    }
+
+    .title {
+        margin-block-start: 1rem;
+        color: var(--clr-title-gray);
+        font-family: Commissioner;
+        font-size: var(--fs-title-1);
+        font-weight: var(--fw-semibold);
+        text-align: left;
+    }
+
+    .wrapper > svg {
+        top: 1rem;
+        right: 1rem;
+        position: absolute;
+        inline-size: 1.25rem;
+        block-size: 1.25rem;
+    }
+
+    .participants {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 -10px;
+    }
+    .galleryItem {
+        margin: 0.5rem;
+        box-sizing: border-box;
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+    .galleryItem img {
+        margin: 0;
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+
+    .circle {
+        margin: 0.5rem;
+        inline-size: 2.75rem;
+        block-size: 2.75rem;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+        background-color: #000000;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .dot:nth-child(1) {
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+
+    .dot:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .dot:nth-child(3) {
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+    }
 }

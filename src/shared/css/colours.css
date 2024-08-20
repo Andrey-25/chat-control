@@ -1,18 +1,13 @@
-   /* KEEP WATCH! After adding new colours here, don't forget updating ./colours.js */
-
    :root {
     /* Basic colours */
     --clr-white: #FFF;
     --clr-bg: #ebebeb;
     --clr-bg-dark-blue: #1a5ab6;
-    --clr-bg-light-blue: #4d90f1;
     --clr-bg-purple: #947CFF;
     --clr-dark-blue: #1a5ab6;
     --clr-light-blue: #4d90f1;
     --clr-text-blue: #4D90F1;
-    --clr-text-white: #FFF;
     --clr-text-black: #595959;
     --clr-title-black: #3E3F4B;
     --clr-title-gray: #787981;
-    --color-title-white: #FFF;
 }

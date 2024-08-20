@@ -1,28 +1,24 @@
 import { Button } from '../../../../shared/ui/Button/Button';
-import PaperAirplane from './../../../../shared/assets/icon/paper-airplane.svg';
 
 import styles from './MainBlock.module.css';
+import { Link } from 'react-router-dom';
+import { AirPlaneIcon } from '../../../../shared/ui/Icon/AirPlane.jsx';
 
 export function MainBlock() {
     return (
         <div className={styles.wrapper}>
-            <div className={styles.title}>
-                административная панель chatcontrol
+            <div>
+                <p className={styles.title}>административная панель ChatControl</p>
+                <h1 className={styles.subtitle}>
+                    Управление <br className={styles.mobile} /> чатами <br />
+                    Telegram <br />
+                    на новом уровне <br />
+                </h1>
             </div>
-            <h1 className={styles.subtitle}>
-                Управление чатами <br/>
-                Telegram <br/>
-                на новом уровне <br/>
-            </h1>
-            <a href="https://t.me/itpmchat_bot" target="_blank">
-                <Button 
-                    children={'Добавить бота'} 
-                    icon={<img src={PaperAirplane} alt='PaperAirplane'></img>} 
-                    size={'big'}
-                    variant={'primary'}
-                    border={'borderBig'}
-                    />     
-            </a>
+
+            <Link to={'https://t.me/itpmchat_bot'}>
+                <Button children={'Добавить бота'} icon={<AirPlaneIcon />} variant={'primary'} />
+            </Link>
         </div>
     );
-};
+}

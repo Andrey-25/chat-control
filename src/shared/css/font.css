@@ -1,4 +1,7 @@
 :root {
+    /* Font family */
+    font-family: Commissioner, sans-serif, 'Poppins', sans-serif;
+
     /* Font sizes */
     --fs-headline-1: 80px;
     --fs-headline-2: 64px;
