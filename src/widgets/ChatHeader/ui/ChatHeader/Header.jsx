@@ -18,7 +18,7 @@ export function ChatHeader() {
                     <SwitchLanguage />
                     <Button
                         children={'В админ панель'}
-                        icon={<AirPlaneIcon />}
+                        icon={<AirPlaneIcon mainColor="#111" />}
                         variant={'secondary'}
                         onClick={handleButtonClick}
                     />

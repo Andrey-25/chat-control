@@ -20,7 +20,7 @@
     text-align: left;
 }
 
-.wrapper img {
+.wrapper > a > img {
     position: absolute;
     top: 1rem;
     right: 1.125rem;
@@ -73,20 +73,25 @@
 
 @media (max-width: 430px) {
     .wrapper {
-        position: relative;
-        overflow: hidden;
-        background-color: var(--clr-bg-purple);
         padding-block: 11px;
         padding-inline: 11px;
         inline-size: 17.1875rem;
         block-size: 11.25rem;
-        margin-inline-start: 1rem;
+        margin-inline-start: 10px;
         border-radius: var(--radius-20);
     }
 
     .title {
         font-size: 22px;
         margin-block-start: 5.7em;
+    }
+
+    .wrapper > a > img {
+        position: absolute;
+        top: 11px;
+        right: 12px;
+        inline-size: 13px;
+        block-size: 13px;
     }
 
     .rectangle1 {

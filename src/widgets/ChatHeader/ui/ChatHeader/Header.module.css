@@ -12,7 +12,8 @@
 @media (max-width: 430px) {
     .container {
         display: flex;
-        padding: 20px 0;
+        padding: 0;
+        padding-block-start: 20px;
         justify-content: space-between;
     }
 

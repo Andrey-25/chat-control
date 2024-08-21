@@ -32,13 +32,13 @@
     }
 
     .aboutWrapper {
-        margin-block-end: 0;
-        block-size: 13.375rem;
+        margin-block-end: 10px;
+        block-size: 12.375rem;
         justify-content: start;
     }
 
     .resourcesWrapper {
-        margin-block-end: 10px;
+        margin-block-end: 0;
         justify-content: start;
     }
 }

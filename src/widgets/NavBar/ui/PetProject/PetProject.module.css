@@ -30,7 +30,7 @@
     text-align: left;
 }
 
-svg {
+.wrapper > a > svg {
     top: 1rem;
     right: 1rem;
     position: absolute;
@@ -44,32 +44,22 @@ svg {
         block-size: 7.75rem;
         padding-inline: 12px;
         padding-block: 8px;
-        margin-block-end: 1rem;
+        margin-block-end: 10px;
     }
 
     .descr {
         font-size: var(--fs-caption-1);
         line-height: 15px;
-        text-align: left;
         margin-block-end: 25px;
     }
 
-    .descr > a {
-        color: var(--clr-text-blue);
-    }
-
     .header {
-        color: var(--clr-text-black);
-        font-family: Commissioner;
         font-size: var(--fs-title-3);
-        font-weight: var(--fw-semibold);
-        text-align: left;
     }
 
-    svg {
+    .wrapper > a > svg {
         top: 13px;
         right: 18px;
-        position: absolute;
         inline-size: 13px;
         block-size: 13px;
     }
