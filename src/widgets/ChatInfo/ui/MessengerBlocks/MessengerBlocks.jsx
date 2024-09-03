@@ -5,15 +5,10 @@ import Linkedin from '../../../../shared/assets/icon/linkedin-icon.svg';
 import Telegram from '../../../../shared/assets/icon/telegram-icon.svg';
 
 export function MessengerBlocks() {
-	return (
-		<div className={styles.wrapper}>
-			<MessengerBlock link={'https://t.me/chatcontrol"'} img={<img src={Linkedin} alt="linkedin" />} />
-			<div className={styles.gap}>
-				<MessengerBlock
-					link={'href="https://www.linkedin.com/company/chat-control/'}
-					img={<img src={Telegram} alt="telegram" />}
-				/>
-			</div>
-		</div>
-	);
+    return (
+        <div className={styles.wrapper}>
+            <MessengerBlock link={'https://t.me/chatcontrol"'} img={Linkedin} />
+            <MessengerBlock link={'href="https://www.linkedin.com/company/chat-control/'} img={Telegram} />
+        </div>
+    );
 }

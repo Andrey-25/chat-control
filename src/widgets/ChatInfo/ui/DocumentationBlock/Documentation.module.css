@@ -1,21 +1,43 @@
 .wrapper {
+    display: flex;
+    align-items: flex-end;
     position: relative;
     overflow: hidden;
     background-color: var(--clr-bg-purple);
-    padding-block: 1rem;
-    padding-inline: 1.5rem;
+    padding: 16px 24px 16px 24px;
     inline-size: 26.75rem;
-    block-size: 16.5rem;
-    margin-inline-start: 10px;
     border-radius: var(--radius-20);
+}
+
+.wrapper:hover {
+    .buttonWithIcon {
+        transform: translateX(7px);
+    }
+
+    .rectangle1 {
+        transform: translateX(35.98px);
+        transform: translateY(27px);
+        transform: rotate(140deg);
+    }
+
+    .rectangle2 {
+        transform: translateX(33px);
+        transform: translateY(27px);
+        transform: rotate(160deg);
+    }
+}
+
+.buttonWithIcon {
+    position: absolute;
+    top: 8px;
+    right: 4px;
 }
 
 .title {
     color: var(--clr-white);
-    font-family: Commissioner;
+    font-family: Commissioner, sans-serif;
     font-size: var(--fs-title-1);
     font-weight: var(--fw-semibold);
-    margin-block-start: 7em;
     letter-spacing: -1.5px;
     text-align: left;
 }
@@ -30,28 +52,30 @@
 
 .rectangle1 {
     z-index: 3;
-    left: 1.69rem;
-    top: -3.7rem;
+    left: -34.29px;
+    top: 0rem;
     position: absolute;
     inline-size: 7.75rem;
     block-size: 11rem;
     border-radius: 4px;
     backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
-    transform: rotate(140deg);
+    transform: rotate(180deg);
+    transition: transform 0.8s ease;
 }
 
 .rectangle2 {
     z-index: 2;
-    left: 1.56rem;
-    top: -1.7rem;
+    left: -34.29px;
+    top: 0rem;
     position: absolute;
     inline-size: 7.75rem;
     block-size: 11rem;
     border-radius: 4px;
     backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
-    transform: rotate(160deg);
+    transform: rotate(180deg);
+    transition: transform 0.8s ease;
 }
 
 .rectangle3 {
@@ -71,13 +95,22 @@
     display: none;
 }
 
+.buttonWithIcon {
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        inline-size: 34rem;
+    }
+}
+
 @media (max-width: 430px) {
     .wrapper {
         padding-block: 11px;
         padding-inline: 11px;
         inline-size: 17.1875rem;
         block-size: 11.25rem;
-        margin-inline-start: 10px;
         border-radius: var(--radius-20);
     }
 

@@ -1,24 +1,39 @@
 .wrapper {
-    margin-inline-start: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
     position: relative;
     overflow: hidden;
-    inline-size: 23rem;
-    block-size: 16.5rem;
+    inline-size: 22rem;
     background-color: var(--clr-light-blue);
-    margin-inline-end: 0.5rem;
     border-radius: var(--radius-20);
-    padding: 1rem;
-    padding-inline-start: 1.5rem;
 }
 
-.desr {
+.wrapper:hover {
+    .smallCircle {
+        transform: translateX(5.5rem);
+    }
+
+    .buttonWithIcon {
+        transform: translateX(7px);
+    }
+}
+
+.buttonWithIcon {
+    position: absolute;
+    top: 8px;
+    right: 4px;
+}
+
+.description {
+    inline-size: 300px;
     z-index: 2;
     position: relative;
     font-size: var(--fs-body-3);
     color: rgb(255, 255, 255);
-    font-family: Roboto;
+    font-family: Roboto, sans-serif;
     font-weight: var(--fw-regular);
-    text-align: left;
     line-height: 20px;
 }
 
@@ -26,20 +41,9 @@
     z-index: 2;
     position: relative;
     color: rgb(255, 255, 255);
-    font-family: Commissioner;
-    margin-block-start: 10.5rem;
+    font-family: Commissioner, sans-serif;
     font-size: var(--fs-title-1);
     font-weight: var(--fw-semibold);
-    text-align: left;
-}
-
-.wrapper > a > img {
-    margin-inline-start: 0;
-    position: absolute;
-    right: 1.125rem;
-    top: 1rem;
-    inline-size: 1.25rem;
-    block-size: 1.25rem;
 }
 
 .bigCircle {
@@ -49,20 +53,22 @@
     left: -5rem;
     inline-size: 12.5rem;
     block-size: 12.5rem;
-    backdrop-filter: blur(40px);
+    /* backdrop-filter: blur(40%); */
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
 }
 
 .smallCircle {
+    z-index: 2;
     position: absolute;
     top: 7rem;
-    left: 4rem;
+    left: -1.5rem;
     inline-size: 6.25rem;
     block-size: 6.25rem;
-    backdrop-filter: blur(40px);
+    backdrop-filter: blur(40%);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
+    transition: transform 0.8s ease;
 }
 
 .mobile {
@@ -73,59 +79,48 @@
     display: block;
 }
 
+.buttonWithIcon {
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .smallCircle {
+        top: 7rem;
+        left: 4rem;
+        inline-size: 6.25rem;
+        block-size: 6.25rem;
+        backdrop-filter: blur(40px);
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+    }
+
+    .wrapper {
+        inline-size: 29.25rem;
+    }
+}
+
 @media (max-width: 430px) {
     .wrapper {
-        margin-inline-start: 0;
-        inline-size: 13.375rem;
-        block-size: 11.25rem;
-        margin-inline-end: 0rem;
-        padding-inline: 1rem;
-        padding-block: 10px;
+        padding: 10px 16px;
     }
-
-    .desr {
-        position: relative;
-        font-size: var(--fs-body-3);
-        line-height: 15px;
-    }
-
     .title {
-        margin-block-start: 5.9rem;
-        font-size: 22px;
+        font-size: 21px;
     }
 
-    .wrapper > a > img {
-        margin-inline-start: 0;
-        right: 12px;
-        top: 11px;
-        inline-size: 13px;
-        block-size: 13px;
+    .buttonWithIcon {
+        top: 6px;
+        right: 4px;
     }
 
-    .bigCircle {
-        z-index: 1;
-        position: absolute;
-        top: 3rem;
-        left: -5rem;
-        inline-size: 10rem;
-        block-size: 10rem;
-        backdrop-filter: blur(40px);
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
+    .description {
+        inline-size: auto;
+        color: var(--clr-white);
+        font-size: var(--fs-caption-1);
+        font-weight: var(--fw-regular);
+        letter-spacing: 0.68px;
+        line-height: 15px;
+        text-align: left;
     }
-
-    .smallCircle {
-        z-index: 2;
-        position: absolute;
-        top: 5.7rem;
-        left: 2.5rem;
-        inline-size: 5rem;
-        block-size: 5rem;
-        backdrop-filter: blur(40px);
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
-    }
-
     .mobile {
         display: block;
     }

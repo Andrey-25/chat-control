@@ -8,8 +8,10 @@ export function MainPage() {
     return (
         <div className={styles.container}>
             <ChatHeader />
-            <ChatInfo />
-            <NavBar />
+            <div className={styles.wrapper}>
+                <ChatInfo />
+                <NavBar />
+            </div>
         </div>
     );
 }

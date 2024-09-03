@@ -2,10 +2,17 @@
     background-color: var(--clr-white);
     inline-size: 37.5rem;
     block-size: 10.625rem;
-    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
     border-radius: var(--radius-20);
     margin-block-end: 1rem;
     position: relative;
+}
+
+.wrapper:hover {
+    .buttonWithIcon {
+        transform: translateX(7px);
+    }
 }
 
 .descr {
@@ -38,13 +45,24 @@
     block-size: 1.25rem;
 }
 
+.buttonWithIcon {
+    transition: transform 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        inline-size: auto;
+        margin-block-end: 0;
+    }
+}
+
 @media (max-width: 430px) {
     .wrapper {
-        inline-size: 23.6rem;
+        inline-size: 23.75rem;
         block-size: 7.75rem;
         padding-inline: 12px;
         padding-block: 8px;
-        margin-block-end: 10px;
+        margin-block-end: 0;
     }
 
     .descr {

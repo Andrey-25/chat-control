@@ -2,7 +2,8 @@
     background-color: var(--clr-white);
     inline-size: 37.5rem;
     block-size: 10.625rem;
-    padding: 1rem;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
     border-radius: var(--radius-20);
     margin-block-end: 1rem;
     position: relative;
@@ -47,13 +48,19 @@
     display: none;
 }
 
+@media (max-width: 768px) {
+    .wrapper {
+        inline-size: auto;
+        margin-block-end: 0;
+    }
+}
+
 @media (max-width: 430px) {
     .wrapper {
-        inline-size: 23.6rem;
+        inline-size: 23.75rem;
         block-size: 7.75rem;
         padding-inline: 12px;
         padding-block: 8px;
-        margin-block-end: 1rem;
     }
 
     .descr {

@@ -1,6 +1,6 @@
 import { MainBlock } from '../MainBlock/MainBlock';
 import { PossibilitiesBlock } from '../PossibilitiesBlock/PossibilitiesBlock';
-import { TeamBlock } from '../TeamBlock/TeamBlock';
+import { TeamBlock } from '../TeamBlock//Team';
 import { MessengerBlocks } from '../MessengerBlocks/MessengerBlocks';
 import { DocumentationBlock } from '../DocumentationBlock/Documentation';
 
@@ -8,22 +8,20 @@ import styles from './Info.module.css';
 
 export function ChatInfo() {
     return (
-        <div className={styles.container}>
-            <div className={styles.wrapper}>
-                <MainBlock />
+        <div className={styles.wrapper}>
+            <MainBlock />
 
-                <div className={styles.aboutChatControl}>
-                    <div className={styles.aboutWrapper}>
-                        <PossibilitiesBlock />
+            <div className={styles.aboutChatControl}>
+                <div className={styles.aboutWrapper}>
+                    <PossibilitiesBlock />
 
-                        <TeamBlock />
-                    </div>
+                    <TeamBlock />
+                </div>
 
-                    <div className={styles.resourcesWrapper}>
-                        <MessengerBlocks />
+                <div className={styles.resourcesWrapper}>
+                    <MessengerBlocks />
 
-                        <DocumentationBlock />
-                    </div>
+                    <DocumentationBlock />
                 </div>
             </div>
         </div>

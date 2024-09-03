@@ -1,18 +1,18 @@
 import styles from './Support.module.css';
 import { Arrow } from '../../../../shared/ui/Icon/Arrow';
+import { Button } from '../../../../shared/ui/Button/Button.jsx';
 import Star from '../../../../shared/assets/icon/star.svg';
 
 export function Support() {
+    const handleButtonClick = () => {
+        window.open('https://chats-organization.gitbook.io/chat-control/general-information/about-the-project');
+    };
+
     return (
         <div className={styles.wrapper}>
-            <a
-                href="https://chats-organization.gitbook.io/chat-control/general-information/about-the-project"
-                className="arrow"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <Arrow mainColor="#FFF" />
-            </a>
+            <div className={styles.buttonWithIcon}>
+                <Button icon={<Arrow mainColor="#111" />} onClick={handleButtonClick} variant={'icon'} />
+            </div>
 
             <div className={styles.descr}>
                 Этот проект задумал <a href="#">Человек Человекович</a> — гений, <br className={styles.mobile} />
