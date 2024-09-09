@@ -1,9 +1,13 @@
+import { useTranslation } from 'react-i18next';
+
 import styles from './Support.module.css';
 import { Arrow } from '../../../../shared/ui/Icon/Arrow';
 import { Button } from '../../../../shared/ui/Button/Button.jsx';
-import Star from '../../../../shared/assets/icon/star.svg';
+import { StarIcon } from '../../../../shared/ui/Icon/StarIcon.jsx';
 
 export function Support() {
+    const { t } = useTranslation();
+
     const handleButtonClick = () => {
         window.open('https://chats-organization.gitbook.io/chat-control/general-information/about-the-project');
     };
@@ -15,12 +19,14 @@ export function Support() {
             </div>
 
             <div className={styles.descr}>
-                Этот проект задумал <a href="#">Человек Человекович</a> — гений, <br className={styles.mobile} />
-                миллиардер, плейбой. филантроп <br className={styles.mobile} />
+                {t('navBar.support.description.part1')} <a href="#">{t('navBar.support.description.link')}</a> —{' '}
+                {t('navBar.support.description.part2')},
+                <br className={styles.mobile} />
+                {t('navBar.support.description.part3')} <br className={styles.mobile} />
                 <br className={styles.desktop} />
-                Он занимается этим и этим и вон тем, и прибрал к себе <br className={styles.mobile} />
-                в лапки нас, <br className={styles.desktop} />
-                беспризорников
+                {t('navBar.support.description.part4')} <br className={styles.mobile} />
+                {t('navBar.support.description.part5')} <br className={styles.desktop} />
+                {t('navBar.support.description.part6')}
             </div>
 
             <div className={styles.innerWrapper}>
@@ -30,14 +36,17 @@ export function Support() {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    <h2 className={styles.header}>Поддержка</h2>
+                    <h2 className={styles.header}>{t('navBar.support.title')}</h2>
                 </a>
                 <div className={styles.imgWrapper}>
-                    <img src={Star} alt="star" className={styles.star} />
-                    <img src={Star} alt="star" className={styles.star} />
-                    <img src={Star} alt="star" className={styles.star} />
-                    <img src={Star} alt="star" className={styles.star} />
-                    <img src={Star} alt="star" className={styles.star} />
+                    {/* {Array.from({ length: 5 }).map((_, i) => (
+                        <StarIcon className={`styles.star${i}`} />
+                    ))} */}
+                    <StarIcon className={styles.star1} />
+                    <StarIcon className={styles.star2} />
+                    <StarIcon className={styles.star3} />
+                    <StarIcon className={styles.star4} />
+                    <StarIcon className={styles.star5} />
                 </div>
             </div>
         </div>

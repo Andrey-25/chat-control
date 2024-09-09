@@ -44,6 +44,11 @@
     inline-size: 1.25rem;
     block-size: 1.25rem;
 }
+.buttonWithIcon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.25rem;
+}
 
 .buttonWithIcon {
     transition: transform 0.5s ease;

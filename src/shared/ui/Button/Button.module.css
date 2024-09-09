@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.basis > svg {
+.basis > span > svg {
     inline-size: 1.25rem;
     block-size: 1.25rem;
     position: absolute;
@@ -32,7 +32,7 @@
     color: var(--clr-white);
 }
 
-.primary > svg {
+.primary span > svg {
     inline-size: 1.25rem;
     block-size: 1.25rem;
     top: 18.5px;
@@ -55,7 +55,7 @@
     inline-size: 7.5rem;
 }
 
-.secondary > svg {
+.secondary .icon > svg {
     block-size: 17px;
     inline-size: 17px;
     top: 14px;

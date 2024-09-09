@@ -1,9 +1,8 @@
 import cn from 'classnames';
 import PropTypes from 'prop-types';
-
 import styles from './Button.module.css';
 
-export function Button({ children, icon = undefined, variant = 'primary', ...props }) {
+export function Button({ children, icon = null, variant = 'primary', ...props }) {
     return (
         <button
             className={cn(styles.basis, {
@@ -12,8 +11,8 @@ export function Button({ children, icon = undefined, variant = 'primary', ...pro
             })}
             {...props}
         >
+            <span>{icon}</span>
             <div className={styles.descr}>{children}</div>
-            {icon}
         </button>
     );
 }

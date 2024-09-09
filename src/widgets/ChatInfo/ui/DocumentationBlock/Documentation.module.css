@@ -17,13 +17,13 @@
     .rectangle1 {
         transform: translateX(35.98px);
         transform: translateY(27px);
-        transform: rotate(140deg);
+        transform: rotate(-140deg);
     }
 
     .rectangle2 {
         transform: translateX(33px);
         transform: translateY(27px);
-        transform: rotate(160deg);
+        transform: rotate(-160deg);
     }
 }
 
@@ -60,7 +60,7 @@
     border-radius: 4px;
     backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
-    transform: rotate(180deg);
+    transform: rotate(-172deg);
     transition: transform 0.8s ease;
 }
 
@@ -74,7 +74,7 @@
     border-radius: 4px;
     backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
-    transform: rotate(180deg);
+    transform: rotate(-172deg);
     transition: transform 0.8s ease;
 }
 
@@ -88,7 +88,7 @@
     border-radius: 4px;
     backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
-    transform: rotate(180deg);
+    transform: rotate(-172deg);
 }
 
 .mobile {

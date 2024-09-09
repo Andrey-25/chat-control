@@ -1,7 +1,7 @@
-@import url("../../shared/css/colours.css");
-@import url("../../shared/css/containers.css");
-@import url("../../shared/css/font.css");
-@import url("../../shared/css/radiuses.css");
+@import url('../../shared/css/colours.css');
+@import url('../../shared/css/containers.css');
+@import url('../../shared/css/font.css');
+@import url('../../shared/css/radiuses.css');
 
 :root {
     font-family: Commissioner, sans-serif;
@@ -72,10 +72,6 @@ html * {
 body {
     margin: 0;
     block-size: 100%;
-}
-
-body svg path {
-    fill: currentcolor;
 }
 
 #root {

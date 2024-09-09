@@ -9,6 +9,27 @@
     position: relative;
 }
 
+.wrapper:hover {
+    .buttonWithIcon {
+        transform: translateX(7px);
+    }
+    .star1 {
+        fill: #f6d86e;
+    }
+    .star2 {
+        fill: #f6d86e;
+    }
+    .star3 {
+        fill: #f6d86e;
+    }
+    .star4 {
+        fill: #f6d86e;
+    }
+    .star5 {
+        fill: #f6d86e;
+    }
+}
+
 .descr {
     color: var(--clr-text-black);
     font-family: Commissioner;
@@ -46,6 +67,41 @@
 
 .mobile {
     display: none;
+}
+
+.buttonWithIcon {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.25rem;
+}
+
+.buttonWithIcon {
+    transition: transform 0.5s ease;
+}
+
+.star1 {
+    fill: rgb(89, 124, 212);
+    transition: fill 0.2s;
+}
+
+.star2 {
+    fill: rgb(89, 124, 212);
+    transition: fill 0.4s;
+}
+
+.star3 {
+    fill: rgb(89, 124, 212);
+    transition: fill 0.6s;
+}
+
+.star4 {
+    fill: rgb(89, 124, 212);
+    transition: fill 0.8s;
+}
+
+.star5 {
+    fill: rgb(89, 124, 212);
+    transition: fill 1s;
 }
 
 @media (max-width: 768px) {

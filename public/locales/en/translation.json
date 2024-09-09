@@ -1,0 +1,58 @@
+{
+    "header": {
+        "btn": "In the admin panel"
+    },
+    "chatInfo": {
+        "documentationBlock": {
+            "title": {
+                "part1": "View",
+                "part2": "documentation"
+            }
+        },
+        "mainBlock": {
+            "title": "administrative panel ChatControl",
+            "subtitle": {
+                "part1": "Chat ",
+                "part2": "management",
+                "part3": "Telegram ",
+                "part4": "on a new level"
+            },
+            "btn": "add bot"
+        },
+        "possibilitiesBlock": {
+            "title": "Bot capabilities",
+            "description": {
+                "part1": "Planning, team ",
+                "part2": "building,",
+                "part3": "manage",
+                "part4": "participants and posts immediately",
+                "part5": "in several chats"
+            }
+        }
+    },
+    "navBar": {
+        "petProject": {
+            "title": "Pet Project",
+            "description": {
+                "part1": "What is a pet project? Everything that is done on ",
+                "part2": "non-profit basis by talented people. We",
+                "part3": "are gaining experience in the process, do you want to join us?",
+                "part4": "Follow  ",
+                "part5": "and keep an eye on vacancies",
+                "link": "this person"
+            }
+        },
+        "support": {
+            "title": "Support",
+            "description": {
+                "part1": "This project was conceived by",
+                "part2": "- a genius, ",
+                "part3": "billionaire, playboy. philanthropist",
+                "part4": "Follow  ",
+                "part5": "He is doing this and this and that, and has taken us into his clutches, ",
+                "part6": "street children",
+                "link": "Man Manovich "
+            }
+        }
+    }
+}

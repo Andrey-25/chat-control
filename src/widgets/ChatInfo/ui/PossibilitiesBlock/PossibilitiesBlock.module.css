@@ -53,7 +53,7 @@
     left: -5rem;
     inline-size: 12.5rem;
     block-size: 12.5rem;
-    /* backdrop-filter: blur(40%); */
+    backdrop-filter: blur(40%);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
 }
@@ -85,13 +85,7 @@
 
 @media (max-width: 768px) {
     .smallCircle {
-        top: 7rem;
         left: 4rem;
-        inline-size: 6.25rem;
-        block-size: 6.25rem;
-        backdrop-filter: blur(40px);
-        background: rgba(255, 255, 255, 0.3);
-        border-radius: 50%;
     }
 
     .wrapper {
