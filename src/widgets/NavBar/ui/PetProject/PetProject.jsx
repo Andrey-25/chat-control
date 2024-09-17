@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
 import styles from './PetProject.module.css';
-import { Button } from '../../../../shared/ui/Button/Button.jsx';
 import { Arrow } from '../../../../shared/ui/Icon/Arrow.jsx';
 
 export function PetProject() {
@@ -12,21 +11,12 @@ export function PetProject() {
     };
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} onClick={handleButtonClick}>
             <div className={styles.buttonWithIcon}>
-                <Button icon={<Arrow mainColor="#111" />} onClick={handleButtonClick} variant={'icon'} />
+                <Arrow mainColor="#111" />
             </div>
 
-            <div className={styles.descr}>
-                {t('navBar.petProject.description.part1')}
-                <br />
-                {t('navBar.petProject.description.part2')}
-                <br />
-                {t('navBar.petProject.description.part3')}
-                <br />
-                {t('navBar.petProject.description.part4')} <a href="#"> {t('navBar.petProject.description.link')}</a> 
-                <br /> {t('navBar.petProject.description.part5')}
-            </div>
+            <div className={styles.descr}>{t('navBar.petProject.description')}</div>
 
             <a
                 href="https://chats-organization.gitbook.io/chat-control/general-information/about-the-project"

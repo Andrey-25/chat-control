@@ -1,12 +1,12 @@
 .wrapper {
     background-color: var(--clr-white);
     inline-size: 37.5rem;
-    block-size: 10.625rem;
     padding-block: 1rem;
     padding-inline: 1.5rem;
     border-radius: var(--radius-20);
     margin-block-end: 1rem;
     position: relative;
+    cursor: pointer;
 }
 
 .wrapper:hover {
@@ -16,13 +16,14 @@
 }
 
 .descr {
+    max-inline-size: 32.5rem;
     color: var(--clr-text-black);
     font-family: Commissioner;
     font-size: var(--fs-body-3);
     font-weight: var(--fw-regular);
     line-height: 20px;
     text-align: left;
-    margin-block-end: 2.44rem;
+    margin-block-end: 4.2rem;
 }
 
 .descr > a {
@@ -37,17 +38,10 @@
     text-align: left;
 }
 
-.wrapper > a > svg {
-    top: 1rem;
-    right: 1rem;
-    position: absolute;
-    inline-size: 1.25rem;
-    block-size: 1.25rem;
-}
 .buttonWithIcon {
     position: absolute;
-    top: 0.5rem;
-    right: 0.25rem;
+    top: 16px;
+    right: 24px;
 }
 
 .buttonWithIcon {
@@ -61,9 +55,21 @@
     }
 }
 
+@media (max-width: 640px) {
+    .descr {
+        max-inline-size: 26rem;
+    }
+}
+
+@media (max-width: 544px) {
+    .descr {
+        margin-block-end: 2.2rem;
+    }
+}
+
 @media (max-width: 430px) {
     .wrapper {
-        inline-size: 23.75rem;
+        inline-size: auto;
         block-size: 7.75rem;
         padding-inline: 12px;
         padding-block: 8px;
@@ -71,6 +77,7 @@
     }
 
     .descr {
+        inline-size: 22rem;
         font-size: var(--fs-caption-1);
         line-height: 15px;
         margin-block-end: 25px;
@@ -80,10 +87,14 @@
         font-size: var(--fs-title-3);
     }
 
-    .wrapper > a > svg {
-        top: 13px;
-        right: 18px;
-        inline-size: 13px;
-        block-size: 13px;
+    .buttonWithIcon {
+        position: absolute;
+        top: 9px;
+        right: 12px;
+    }
+
+    .buttonWithIcon > svg {
+        width: 13px;
+        height: 13px;
     }
 }

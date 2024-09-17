@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 
 import styles from './Documentation.module.css';
-import { Button } from '../../../../shared/ui/Button/Button';
 import { Arrow } from '../../../../shared/ui/Icon/Arrow';
 
 export function DocumentationBlock() {
@@ -15,12 +14,12 @@ export function DocumentationBlock() {
     };
 
     return (
-        <div className={styles.wrapper}>
+        <div onClick={handleButtonClick} className={styles.wrapper}>
             <div className={styles.rectangle1} />
             <div className={styles.rectangle2} />
             <div className={styles.rectangle3} />
             <div className={styles.buttonWithIcon}>
-                <Button icon={<Arrow mainColor="#FFF" />} onClick={handleButtonClick} variant={'icon'} />
+                <Arrow mainColor="#fff" />
             </div>
             <div className={styles.title}>
                 {t('chatInfo.documentationBlock.title.part1')} <br className={styles.mobile} />{' '}

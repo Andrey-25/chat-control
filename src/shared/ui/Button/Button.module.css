@@ -10,14 +10,6 @@
     text-align: center;
 }
 
-.basis > span > svg {
-    inline-size: 1.25rem;
-    block-size: 1.25rem;
-    position: absolute;
-    top: 10px;
-    right: 19px;
-}
-
 .primary {
     inline-size: 12.5rem;
     height: 4.66rem;
@@ -33,10 +25,10 @@
 }
 
 .primary span > svg {
+    display: block;
+    margin-block-start: 2px;
     inline-size: 1.25rem;
     block-size: 1.25rem;
-    top: 18.5px;
-    right: 16px;
 }
 
 .secondary {
@@ -51,15 +43,25 @@
     color: var(--clr-light-blue);
 }
 
-.descr {
-    inline-size: 7.5rem;
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
 }
 
-.secondary .icon > svg {
+.descr {
+    inline-size: auto;
+}
+
+.secondary > .wrapper > .descr {
+    inline-size: 7.3rem;
+}
+
+.secondary > span > svg {
     block-size: 17px;
     inline-size: 17px;
-    top: 14px;
-    right: 16px;
 }
 
 @media (hover: hover) {
@@ -81,7 +83,6 @@
     }
 
     .primary > svg {
-        display: block;
         inline-size: 1.25rem;
         block-size: 1.25rem;
         top: 18.5px;

@@ -7,6 +7,7 @@
     padding: 16px 24px 16px 24px;
     inline-size: 26.75rem;
     border-radius: var(--radius-20);
+    cursor: pointer;
 }
 
 .wrapper:hover {
@@ -17,20 +18,20 @@
     .rectangle1 {
         transform: translateX(35.98px);
         transform: translateY(27px);
-        transform: rotate(-140deg);
+        transform: rotate(-15deg);
     }
 
     .rectangle2 {
         transform: translateX(33px);
         transform: translateY(27px);
-        transform: rotate(-160deg);
+        transform: rotate(-35deg);
     }
 }
 
 .buttonWithIcon {
     position: absolute;
-    top: 8px;
-    right: 4px;
+    top: 16px;
+    right: 24px;
 }
 
 .title {
@@ -58,10 +59,9 @@
     inline-size: 7.75rem;
     block-size: 11rem;
     border-radius: 4px;
-    backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
     transform: rotate(-172deg);
-    transition: transform 0.8s ease;
+    transition: transform 1.5s ease;
 }
 
 .rectangle2 {
@@ -72,10 +72,9 @@
     inline-size: 7.75rem;
     block-size: 11rem;
     border-radius: 4px;
-    backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
     transform: rotate(-172deg);
-    transition: transform 0.8s ease;
+    transition: transform 1.5s ease;
 }
 
 .rectangle3 {
@@ -86,7 +85,6 @@
     inline-size: 7.75rem;
     block-size: 11rem;
     border-radius: 4px;
-    backdrop-filter: blur(40px);
     background: rgba(255, 255, 255, 0.2);
     transform: rotate(-172deg);
 }
@@ -125,6 +123,17 @@
         right: 12px;
         inline-size: 13px;
         block-size: 13px;
+    }
+
+    .buttonWithIcon {
+        position: absolute;
+        top: 9px;
+        right: 12px;
+    }
+
+    .buttonWithIcon > svg {
+        width: 13px;
+        height: 13px;
     }
 
     .rectangle1 {

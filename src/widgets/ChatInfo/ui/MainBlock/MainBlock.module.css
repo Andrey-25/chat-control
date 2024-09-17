@@ -1,3 +1,23 @@
+@keyframes jumping-big-coin {
+    from {
+        top: 105px;
+    }
+
+    to {
+        top: 120px;
+    }
+}
+
+@keyframes jumping-little-coin {
+    from {
+        bottom: -220px;
+    }
+
+    to {
+        bottom: -242px;
+    }
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -25,18 +45,21 @@
     font-family: Poppins, sans-serif;
     font-size: 3.5rem;
     font-weight: var(--fw-medium);
+    inline-size: 560px;
 }
 
 .bigTgImg {
     position: absolute;
     right: -51px;
     top: 152px;
+    animation: jumping-big-coin 2s infinite alternate;
 }
 
 .litlleTgImgs {
     position: absolute;
     right: 10px;
     bottom: -242px;
+    animation: jumping-little-coin 2s infinite alternate;
 }
 
 .mobile {

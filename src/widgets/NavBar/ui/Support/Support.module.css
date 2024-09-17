@@ -1,43 +1,50 @@
 .wrapper {
     background-color: var(--clr-white);
     inline-size: 37.5rem;
-    block-size: 10.625rem;
     padding-block: 1rem;
     padding-inline: 1.5rem;
     border-radius: var(--radius-20);
     margin-block-end: 1rem;
     position: relative;
+    cursor: pointer;
 }
 
 .wrapper:hover {
+    .imgWrapper > svg:nth-child(1) {
+        fill: #f6d86e;
+        width: 23px;
+        height: 23px;
+    }
+
+    .imgWrapper > svg:nth-child(2) {
+        fill: #f6d86e;
+    }
+
+    .imgWrapper > svg:nth-child(3) {
+        fill: #f6d86e;
+    }
+
+    .imgWrapper > svg:nth-child(4) {
+        fill: #f6d86e;
+    }
+
+    .imgWrapper > svg:nth-child(5) {
+        fill: #f6d86e;
+    }
     .buttonWithIcon {
         transform: translateX(7px);
-    }
-    .star1 {
-        fill: #f6d86e;
-    }
-    .star2 {
-        fill: #f6d86e;
-    }
-    .star3 {
-        fill: #f6d86e;
-    }
-    .star4 {
-        fill: #f6d86e;
-    }
-    .star5 {
-        fill: #f6d86e;
     }
 }
 
 .descr {
+    max-inline-size: 34.625rem;
     color: var(--clr-text-black);
     font-family: Commissioner;
     font-size: var(--fs-body-3);
     font-weight: var(--fw-regular);
     line-height: 20px;
     text-align: left;
-    margin-block-end: 5rem;
+    margin-block-end: 5.5rem;
 }
 
 .descr > a {
@@ -52,14 +59,6 @@
     text-align: left;
 }
 
-.wrapper > a > svg {
-    top: 1rem;
-    right: 1rem;
-    position: absolute;
-    inline-size: 1.25rem;
-    block-size: 1.25rem;
-}
-
 .innerWrapper {
     display: flex;
     justify-content: space-between;
@@ -71,35 +70,35 @@
 
 .buttonWithIcon {
     position: absolute;
-    top: 0.5rem;
-    right: 0.25rem;
+    top: 16px;
+    right: 24px;
 }
 
 .buttonWithIcon {
     transition: transform 0.5s ease;
 }
 
-.star1 {
+.imgWrapper > svg:nth-child(1) {
     fill: rgb(89, 124, 212);
     transition: fill 0.2s;
 }
 
-.star2 {
+.imgWrapper > svg:nth-child(2) {
     fill: rgb(89, 124, 212);
     transition: fill 0.4s;
 }
 
-.star3 {
+.imgWrapper > svg:nth-child(3) {
     fill: rgb(89, 124, 212);
     transition: fill 0.6s;
 }
 
-.star4 {
+.imgWrapper > svg:nth-child(4) {
     fill: rgb(89, 124, 212);
     transition: fill 0.8s;
 }
 
-.star5 {
+.imgWrapper > svg:nth-child(5) {
     fill: rgb(89, 124, 212);
     transition: fill 1s;
 }
@@ -111,15 +110,28 @@
     }
 }
 
+@media (max-width: 640px) {
+    .descr {
+        max-inline-size: 26rem;
+    }
+}
+
+@media (max-width: 544px) {
+    .descr {
+        margin-block-end: 2.2rem;
+    }
+}
+
 @media (max-width: 430px) {
     .wrapper {
-        inline-size: 23.75rem;
+        inline-size: auto;
         block-size: 7.75rem;
         padding-inline: 12px;
         padding-block: 8px;
     }
 
     .descr {
+        inline-size: 21rem;
         font-size: var(--fs-caption-1);
         line-height: 15px;
         margin-block-end: 25px;
@@ -133,18 +145,22 @@
         font-size: var(--fs-title-3);
     }
 
+    .buttonWithIcon {
+        position: absolute;
+        top: 9px;
+        right: 12px;
+    }
+
+    .buttonWithIcon > svg {
+        width: 13px;
+        height: 13px;
+    }
+
     .desktop {
         display: none;
     }
 
     .mobile {
         display: block;
-    }
-
-    .wrapper > a > svg {
-        top: 13px;
-        right: 18px;
-        inline-size: 13px;
-        block-size: 13px;
     }
 }

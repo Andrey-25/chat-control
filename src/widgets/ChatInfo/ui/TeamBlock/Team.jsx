@@ -1,7 +1,6 @@
 import styles from './TeamBlock.module.css';
 import { Arrow } from '../../../../shared/ui/Icon/Arrow.jsx';
 import { PersonAvatar } from '../../../../shared/ui/Avatar/PersonAvatar';
-import { Button } from '../../../../shared/ui/Button/Button';
 import person from '../../../../shared/assets/icon/Ellipse 46.png';
 
 export function TeamBlock() {
@@ -11,9 +10,9 @@ export function TeamBlock() {
     };
 
     return (
-        <div className={styles.wrapper}>
+        <div onClick={handleButtonClick} className={styles.wrapper}>
             <div className={styles.buttonWithIcon}>
-                <Button icon={<Arrow />} onClick={handleButtonClick} variant={'icon'} />
+                <Arrow mainColor="#111" />
             </div>
             <div className={styles.team}>
                 {teamPhotos.map((photo, index) => (

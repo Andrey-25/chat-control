@@ -8,11 +8,13 @@
     inline-size: 22rem;
     background-color: var(--clr-light-blue);
     border-radius: var(--radius-20);
+    cursor: pointer;
 }
 
 .wrapper:hover {
     .smallCircle {
         transform: translateX(5.5rem);
+        filter: none;
     }
 
     .buttonWithIcon {
@@ -22,12 +24,12 @@
 
 .buttonWithIcon {
     position: absolute;
-    top: 8px;
-    right: 4px;
+    top: 16px;
+    right: 24px;
 }
 
 .description {
-    inline-size: 300px;
+    max-inline-size: 18.75rem;
     z-index: 2;
     position: relative;
     font-size: var(--fs-body-3);
@@ -53,7 +55,6 @@
     left: -5rem;
     inline-size: 12.5rem;
     block-size: 12.5rem;
-    backdrop-filter: blur(40%);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
 }
@@ -65,10 +66,12 @@
     left: -1.5rem;
     inline-size: 6.25rem;
     block-size: 6.25rem;
-    backdrop-filter: blur(40%);
     background: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
-    transition: transform 0.8s ease;
+    filter: blur(10px);
+    transition:
+        transform 0.8s ease,
+        filter 0.8s ease;
 }
 
 .mobile {
@@ -93,6 +96,12 @@
     }
 }
 
+@media (max-width: 544px) {
+    .description {
+        max-inline-size: 13.375rem;
+    }
+}
+
 @media (max-width: 430px) {
     .wrapper {
         padding: 10px 16px;
@@ -102,8 +111,14 @@
     }
 
     .buttonWithIcon {
-        top: 6px;
-        right: 4px;
+        position: absolute;
+        top: 5px;
+        right: 12px;
+    }
+
+    .buttonWithIcon > svg {
+        width: 13px;
+        height: 13px;
     }
 
     .description {

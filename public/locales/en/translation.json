@@ -21,38 +21,17 @@
         },
         "possibilitiesBlock": {
             "title": "Bot capabilities",
-            "description": {
-                "part1": "Planning, team ",
-                "part2": "building,",
-                "part3": "manage",
-                "part4": "participants and posts immediately",
-                "part5": "in several chats"
-            }
+            "description": "Планирование, создание команд, управление участниками и постами сразу в нескольких чатах"
         }
     },
     "navBar": {
         "petProject": {
             "title": "Pet Project",
-            "description": {
-                "part1": "What is a pet project? Everything that is done on ",
-                "part2": "non-profit basis by talented people. We",
-                "part3": "are gaining experience in the process, do you want to join us?",
-                "part4": "Follow  ",
-                "part5": "and keep an eye on vacancies",
-                "link": "this person"
-            }
+            "description": "What is a pet project? Everything that is done on non-profit basis by talented people. Weare gaining experience in the process, do you want to join us?Follow  this person and keep an eye on vacancies"
         },
         "support": {
             "title": "Support",
-            "description": {
-                "part1": "This project was conceived by",
-                "part2": "- a genius, ",
-                "part3": "billionaire, playboy. philanthropist",
-                "part4": "Follow  ",
-                "part5": "He is doing this and this and that, and has taken us into his clutches, ",
-                "part6": "street children",
-                "link": "Man Manovich "
-            }
+            "description": "This project was conceived byMan Manovich  — - a genius, ,billionaire, playboy. Follow  He is doing this and this and that, and has taken us into his clutches, street children"
         }
     }
 }

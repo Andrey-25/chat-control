@@ -7,10 +7,16 @@
 }
 
 .btn {
+    font-size: 16px;
     block-size: var(--fs-title-3);
     color: var(--clr-title-black);
     cursor: pointer;
     opacity: 0.5;
+}
+
+.active {
+    color: var(--clr-light-blue);
+    font-weight: 600;
 }
 
 @media (max-width: 430px) {

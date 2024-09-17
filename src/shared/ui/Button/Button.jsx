@@ -11,8 +11,10 @@ export function Button({ children, icon = null, variant = 'primary', ...props })
             })}
             {...props}
         >
-            <span>{icon}</span>
-            <div className={styles.descr}>{children}</div>
+            <div className={styles.wrapper}>
+                <div className={styles.descr}>{children}</div>
+                <span>{icon}</span>
+            </div>
         </button>
     );
 }
