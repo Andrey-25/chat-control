@@ -10,18 +10,21 @@ export function ChatHeader() {
     const { t } = useTranslation();
 
     const handleButtonClick = () => {
-        window.open('https://t.me/itpmchat_bot', '_blank');
+        window.open('https://t.me/ITPM_dev_main_bot', '_blank');
     };
 
     return (
         <header>
             <div className={styles.container}>
-                <ProjectLogo />
+                <div className={styles.logoWrapper}>
+                    <ProjectLogo />
+                    <div className={styles.progress}>work-in-progress version</div>
+                </div>
                 <div className={styles.innerWrapper}>
                     <SwitchLanguage />
                     <Button
                         children={t('header.btn')}
-                        icon={<AirPlaneIcon mainColor="#111" />}
+                        icon={<AirPlaneIcon mainColor="#4d90f1" />}
                         variant={'secondary'}
                         onClick={handleButtonClick}
                     />

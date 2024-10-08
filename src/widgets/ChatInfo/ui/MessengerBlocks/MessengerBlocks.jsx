@@ -8,7 +8,7 @@ export function MessengerBlocks() {
     return (
         <div className={styles.wrapper}>
             <MessengerBlock link={'https://t.me/chatcontrol"'} img={Linkedin} />
-            <MessengerBlock link={'href="https://www.linkedin.com/company/chat-control/'} img={Telegram} />
+            <MessengerBlock link={'https://t.me/+9QjDVLYBDl5lNGYy'} img={Telegram} />
         </div>
     );
 }

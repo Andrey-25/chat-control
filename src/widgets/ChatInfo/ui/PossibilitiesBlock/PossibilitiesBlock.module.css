@@ -6,7 +6,7 @@
     position: relative;
     overflow: hidden;
     inline-size: 22rem;
-    background-color: var(--clr-light-blue);
+    background-color: var(--clr-text-blue);
     border-radius: var(--radius-20);
     cursor: pointer;
 }
@@ -29,7 +29,7 @@
 }
 
 .description {
-    max-inline-size: 18.75rem;
+    max-inline-size: 18rem;
     z-index: 2;
     position: relative;
     font-size: var(--fs-body-3);

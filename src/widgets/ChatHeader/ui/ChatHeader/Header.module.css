@@ -2,6 +2,25 @@
     display: flex;
     padding: 16px 0;
     justify-content: space-between;
+    margin-block-end: 2rem;
+}
+
+.logoWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress {
+    font-weight: 700;
+    block-size: 1.875rem;
+    padding-inline: 0.5rem;
+    background-color: #111;
+    color: var(--clr-white);
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    border-radius: 3px;
 }
 
 .innerWrapper {
@@ -10,6 +29,19 @@
 }
 
 @media (max-width: 768px) {
+    .logoWrapper {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .progress {
+        block-size: 0.5rem;
+        font-size: 12px;
+        background-color: var(--bg-color);
+        color: var(--clr-text-blue);
+        margin-inline-start: 40px;
+    }
+
     .container {
         padding: 10px 16px;
     }

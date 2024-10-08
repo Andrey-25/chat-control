@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { AirPlaneIcon } from '../../../../shared/ui/Icon/AirPlane.jsx';
 import { useTranslation } from 'react-i18next';
 
@@ -10,6 +9,11 @@ import LitleTgImgs from '../../../../shared/assets/icon/little-bg-tg.svg';
 
 export function MainBlock() {
     const { t } = useTranslation();
+
+    const handleButtonClick = () => {
+        window.open('https://t.me/ITPM_dev_main_bot', '_blank');
+    };
+
     return (
         <div className={styles.wrapper}>
             <div>
@@ -25,9 +29,12 @@ export function MainBlock() {
             <img src={BigTgImg} alt="big telegram icon" className={styles.bigTgImg} />
             <img src={LitleTgImgs} alt="small telegram icons" className={styles.litlleTgImgs} />
 
-            <Link to={'https://t.me/itpmchat_bot'}>
-                <Button children={t('chatInfo.mainBlock.btn')} icon={<AirPlaneIcon />} variant={'primary'} />
-            </Link>
+            <Button
+                children={t('chatInfo.mainBlock.btn')}
+                icon={<AirPlaneIcon mainColor="#fff" />}
+                variant={'primary'}
+                onClick={handleButtonClick}
+            />
         </div>
     );
 }

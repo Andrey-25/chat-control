@@ -21,17 +21,17 @@
         },
         "possibilitiesBlock": {
             "title": "Bot capabilities",
-            "description": "Планирование, создание команд, управление участниками и постами сразу в нескольких чатах"
+            "description": "Our service provides convenient tools for effective management of groups and channels"
         }
     },
     "navBar": {
         "petProject": {
-            "title": "Pet Project",
-            "description": "What is a pet project? Everything that is done on non-profit basis by talented people. Weare gaining experience in the process, do you want to join us?Follow  this person and keep an eye on vacancies"
+            "title": "About the project",
+            "description": "Our goal is to create a convenient service for managing groups and channels in Telegram, as well as gain practical experience in developing IT products"
         },
         "support": {
             "title": "Support",
-            "description": "This project was conceived byMan Manovich  — - a genius, ,billionaire, playboy. Follow  He is doing this and this and that, and has taken us into his clutches, street children"
+            "description": "If you like our service and want to help its development, you can support us with a donation. Your support will allow us to improve functionality, add new features and ensure smooth operation"
         }
     }
 }

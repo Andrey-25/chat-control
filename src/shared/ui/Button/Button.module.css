@@ -18,9 +18,9 @@
     font-size: 1rem;
     line-height: 150%;
     box-sizing: border-box;
-    border: 1.5px solid var(--clr-light-blue);
+    border: 1.5px solid var(--clr-text-blue);
     border-radius: 0.5rem;
-    background-color: var(--clr-light-blue);
+    background-color: var(--clr-text-blue);
     color: var(--clr-white);
 }
 
@@ -40,7 +40,7 @@
     border: 1.5px solid rgb(229, 237, 255);
     border-radius: 0.5rem;
     background-color: var(--clr-white);
-    color: var(--clr-light-blue);
+    color: var(--clr-text-blue);
 }
 
 .wrapper {

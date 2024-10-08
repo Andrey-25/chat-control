@@ -21,7 +21,7 @@ export function Support() {
 
             <div className={styles.innerWrapper}>
                 <a
-                    href="https://chats-organization.gitbook.io/chat-control/general-information/about-the-project"
+                    href=" https://t.me/tribute/app?startapp=d6eg"
                     className={styles.messenger}
                     target="_blank"
                     rel="noreferrer"

@@ -15,7 +15,7 @@
 }
 
 .active {
-    color: var(--clr-light-blue);
+    color: var(--clr-text-blue);
     font-weight: 600;
 }
 

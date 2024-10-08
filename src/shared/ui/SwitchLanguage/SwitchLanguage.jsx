@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import styles from './SwitchLanguage.module.css';
 
 export function SwitchLanguage() {
-    const [active, setActive] = useState(0);
+    const [active, setActive] = useState(1);
     const { i18n } = useTranslation();
 
     const changeLanguage = (language) => {
